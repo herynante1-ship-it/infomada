@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica
+      Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-primary text-white rounded-lg font-medium hover:bg-primary-dark transition-colors active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-white text-primary border border-primary rounded-lg font-medium hover:bg-primary-light transition-colors active:scale-95;
+  }
+
+  .badge-neuf {
+    @apply inline-block px-2 py-1 bg-success text-white text-xs rounded font-medium;
+  }
+
+  .badge-occasion {
+    @apply inline-block px-2 py-1 bg-blue-500 text-white text-xs rounded font-medium;
+  }
+
+  .badge-pieces {
+    @apply inline-block px-2 py-1 bg-warning text-white text-xs rounded font-medium;
+  }
+
+  .badge-shop {
+    @apply inline-block px-2 py-1 bg-primary text-white text-xs rounded font-medium;
+  }
+
+  .card {
+    @apply bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow;
+  }
+
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+  }
+}
